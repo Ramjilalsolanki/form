@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume_form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="submit_form" method="post" onsubmit="downloadData(event)">
+       <center> <h1>RESUME FORM</h1></center>
+       <div> 
+        <fieldset>
+            <legend>
+                Personal Details:
+            </legend>
+            <label for=" fullname" >Full Name:</label><br>
+            <input type="text" id="fullname" ><br>
+              <label for="moblie no." >Mobile Number:</label><br>
+            <input type="tel"  id="mobile no." maxlength="10"><br>
+            <label for="email" name="email ">EMAIL:</label><br>
+            <input type="email" id="email" ><br>
+            <br>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+            <legend>
+                Professinal Summary:
+            </legend>
+            <label></label>
+            <textarea style="width: 10cm;"></textarea>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+           <legend>Education:</legend>
+           <label for="uni">College Name:</label><br>
+           <input type="text" id="uni" name="uni"><br>
+           <label for ="dgree" >Course Enroll:</label><br>
+           <select id="'dgree" name="dgree">
+            <option value="none">None</option>
+            <option value="Bachlor of Engineering">Bachlor of Engineering</option>
+            <option value="Bachelor of Arts Degree">Bachelor of Arts Degree</option>
+            <option value="Bachelor of Science ">Bachelor of Science </option>
+            
+           </select><br>
+           <label for="branch">Branch:</label><br>
+           <select  id="branch" name="branch" placeholder="select branch" style="width:150px;">
+              <option value="none">None</option>
+              <option  value="Computer Science Engineering">Computer Science Engineering</option>
+              <option  value="Mining Engineering">Mining Engineering</option>
+              <option  value="Electrical Engineering">Electrical Engineering</option>
+              <option  value="Civil Engineering">Civil Engineering</option>
+              <option  value="Petroleum Engineering">Petroleum Engineering</option>
+              <option  value="Mechanical Engineering">Mechanical Engineering</option>
+              <option  value="Printing Engineering">Printing Engineering</option>
+           </select><br>
+           <label for="duration">Course Duration:</label><br>
+           <label for="year">Start:</label>
+           <input type="number" id="year" name="year" min="1900" max="2100" placeholder="YYYY">
+           <label for="year">End:</label>
+          <input type="number" id="year" name="year" min="1901" max="2100" placeholder="YYYY">
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+          <legend>Experience:</legend>
+          <label for="job">Company Name:</label><br>
+          <input id="job" type="text"><br>
+          <label for="jobtitle">Job Title:</label><br>
+          <input type="text" id="jobtitle" name="jobtitle"><br>
+           <label for="duration">Duration:</label><br>
+          <label for="jobyear_start">Form:</label>
+           <input type="number" id="jobyear_start" name="jobyear_start" min="1900" max="2100" placeholder="YYYY">
+           <label for="jobyear_end">To :</label>
+          <input type="number" id="jobyear_end" name="jobyear_end" min="1901" max="2100" placeholder="YYYY">
+         </fieldset>
+      </div>
+      <div>
+        <fieldset>
+          <legend>Project:</legend>
+          <label for="about">Description:</label><br>
+          <textarea placeholder="Tell Me About Your Project!" id="about" name="about"></textarea><br>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+          <legend>Skills:</legend>
+          <label for="skills"></label>
+          <input type="text" id="skills" name="skills" >    
+        </fieldset>
+      </div><br>
+      <center><button type="submit" name="submit" >SUBMIT</button></center>
+    </form>
+</body>
+</html>

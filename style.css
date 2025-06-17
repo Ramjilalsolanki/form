@@ -1,0 +1,38 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+}
+body{
+    background-image:url(form_background.avif) ;
+     background-attachment: fixed;
+     background-size: cover;
+     background-attachment: fixed;
+    
+}
+
+fieldset{
+    background: transparent;
+    border-color: black;
+    box-shadow: 2px 2px 5px rgba(216, 73, 17, 0.925);
+    border-radius: 10px;
+    border-style: solid;
+    
+
+}
+legend{
+    color: rgb(0, 0, 0);
+    background: transparent;
+    border-radius: 5px;
+    border-color:black ;
+    
+}
+
+input,label,select,textarea,button{
+    background: transparent;
+    border-radius: 10px;
+}
+button{
+    box-shadow: 2px 2px 5px rgba(216, 73, 17, 0.925);
+    
+}
